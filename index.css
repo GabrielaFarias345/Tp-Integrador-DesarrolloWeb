@@ -1,0 +1,70 @@
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    background-color: var(--color-bg-tarjeta);
+    flex-direction: row;
+    padding: 2rem;
+    gap: 1rem;
+    min-height: 400px;
+    max-width: 1300px;
+}
+
+.texto-container, .hero-img {
+    flex: 1
+}
+
+.texto-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.etiqueta {
+    padding: 0.5rem;
+    background-color: var(--color-azul-suave-bg);
+    border-radius: 1rem;
+    color: var(--color-azul-oscuro);
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.texto-container h3 {
+    color: var(--color-text-principal);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.texto-container p {
+    color: var(--color-text-secundario);
+}
+
+.texto-container div {
+    margin-top: 1rem;
+}
+
+.texto-container > div > a {
+    padding: 1rem;
+    background-color: var(--color-azul-acento);
+    color: var(--color-bg-tarjeta);
+    border-radius: 0.6rem;
+}
+
+.hero-img img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
