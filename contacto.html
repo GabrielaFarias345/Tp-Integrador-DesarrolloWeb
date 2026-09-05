@@ -1,99 +1,106 @@
-<!DOCTYPE html>
+!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto — Chalk & Chat</title>
-  <meta name="description" content="Contactate con Chalk & Chat, academia de inglés.">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Mary - Contacto</title>
+    <meta
+      name="description"
+      content="Contactate con La Mary, clínica veterinaria."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <img src="img/logo.jpg" alt="Logo La Mary" class="brand-logo" />
+          <span class="brand-name">La Mary</span>
+        </a>
+        <nav class="main-nav" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="institucional.html">Institucional</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html">
-        <span class="brand-mark">C&amp;C</span>
-        <span class="brand-name">Chalk <span>&amp;</span> Chat</span>
-      </a>
-      <nav class="main-nav" aria-label="Navegación principal">
-        <ul>
+    <div class="doodle"></div>
+
+    <main>
+      <div class="page-head">
+        <div class="container">
+          <p class="tag">contactanos</p>
+          <h1>Contanos qué necesita tu mascota y te damos un turno.</h1>
+        </div>
+      </div>
+
+      <section class="content-section">
+        <div class="container contact-grid">
+          <div>
+            <ul class="info-list">
+              <li>
+                <span class="label">DIRECCIÓN</span>
+                Bulevar Roca 512, Rafaela, Santa Fe
+              </li>
+              <li>
+                <span class="label">TELÉFONO</span>
+                (03492) 415-3320
+              </li>
+              <li>
+                <span class="label">EMAIL</span>
+                <a href="mailto:hola@lamary.com.ar">hola@lamary.com.ar</a>
+              </li>
+              <li>
+                <span class="label">HORARIO DE ATENCIÓN</span>
+                Lunes a viernes, 8 a 12 y 16 a 20 h. Emergencias las 24 hs.
+              </li>
+            </ul>
+            <p class="map-note">
+              Mapa de ubicación pendiente de agregar — reemplazar este bloque
+              por el mapa embebido cuando esté disponible.
+            </p>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="field">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="mascota">Nombre de tu mascota</label>
+              <input
+                type="text"
+                id="mascota"
+                name="mascota"
+                placeholder="Ej: Firulais"
+              />
+            </div>
+            <div class="field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 La Mary — Clínica Veterinaria.</p>
+        <ul class="footer-nav">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="institucional.html">Institucional</a></li>
-          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-      </nav>
-    </div>
-  </header>
-
-  <div class="doodle"></div>
-
-  <main>
-
-    <div class="page-head">
-      <div class="container">
-        <p class="tag">let's talk</p>
-        <h1>Contanos tu nivel de inglés y te ubicamos en el grupo justo.</h1>
       </div>
-    </div>
-
-    <section>
-      <div class="container contact-grid">
-        <div>
-          <ul class="info-list">
-            <li>
-              <span class="label">DIRECCIÓN</span>
-              Bulevar Yrigoyen 512, Concordia, Entre Ríos
-            </li>
-            <li>
-              <span class="label">TELÉFONO</span>
-              (0345) 415-3320
-            </li>
-            <li>
-              <span class="label">EMAIL</span>
-              <a href="mailto:hello@chalkandchat.edu.ar">hello@chalkandchat.edu.ar</a>
-            </li>
-            <li>
-              <span class="label">HORARIO DE SECRETARÍA</span>
-              Lunes a viernes, 9 a 13 y 16 a 20 h
-            </li>
-          </ul>
-          <p class="map-note">Mapa de ubicación pendiente de agregar — reemplazar este bloque por el mapa embebido cuando esté disponible.</p>
-        </div>
-
-        <form class="contact-form" action="#" method="post">
-          <div class="field">
-            <label for="nombre">Nombre y apellido</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="field">
-            <label for="grupo">Grupo de interés</label>
-            <input type="text" id="grupo" name="grupo" placeholder="Ej: English Kids, Adultos, Exam Prep">
-          </div>
-          <div class="field">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-          </div>
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2026 Chalk &amp; Chat — Academia de Inglés.</p>
-      <ul class="footer-nav">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="institucional.html">Institucional</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
