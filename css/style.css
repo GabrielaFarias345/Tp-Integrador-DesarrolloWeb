@@ -92,14 +92,14 @@ a {
 }
 
 .brand-name {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--color-text);
 }
 
 .brand-logo {
-  height: 38px;
-  width: 38px;
+  height: 75px;
+  width: 75px;
   object-fit: contain;
   display: block;
 }
@@ -115,7 +115,7 @@ a {
 .main-nav a {
   color: var(--color-text-muted);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
@@ -281,6 +281,45 @@ a {
 .course-card p {
   font-size: 0.9rem;
   margin-bottom: 0;
+}
+
+/* Nuestros pacientes felices */
+
+.pets-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pet-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.pet-card img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg);
+  margin-bottom: 12px;
+}
+
+.pet-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 4px;
+  color: var(--color-text);
+}
+
+.pet-card p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
 }
 
 /* =========================================================
@@ -609,7 +648,8 @@ a {
   }
 
   .courses,
-  .team-grid {
+  .team-grid,
+  .pets-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -628,7 +668,8 @@ a {
   }
 
   .courses,
-  .team-grid {
+  .team-grid,
+  .pets-grid {
     grid-template-columns: 1fr;
   }
 

@@ -2,9 +2,10 @@
 
 ## Integrantes
 
-- Vaira, Rocio
-- Apellido, Nombre
-- Apellido, Nombre
+- Vaira Rocio
+- Pulleiro Laura
+- Farias Gabriela
+- Duarte Dylan
 
 ## Descripción
 
