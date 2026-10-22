@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Veterinaria La Mary - Gestión de Mascotas</title>
+
+  <script defer src="mascotas.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo">
+      <div class="icon">
+        <p>M</p>
+      </div>
+
+      <div class="marca">
+        <h1>La Mary</h1>
+        <h2>CLÍNICA VETERINARIA</h2>
+      </div>
+    </a>
+
+    <nav class="navegacion">
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="institucional.html">Institucional</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a class="active" href="mascotas.html">Mascotas</a>
+        </li>
+        <li>
+          <div class="boton-container">
+            <button>
+              Pedir turno
+            </button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="container py-5">
+      <div class="row g-4">
+
+        <!-- LISTADO Y TABLA -->
+        <article class="col-12 col-lg-7">
+          <span class="badge rounded-pill text-bg-primary fw-semibold">MASCOTAS</span>
+          <h2 class="fs-1 fw-semibold mt-2">
+            Mascotas Registradas
+            <span class="badge text-bg-secondary align-middle fs-5" id="total">
+              0
+            </span>
+          </h2>
+
+          <div class="table-responsive-md">
+            <table class="table table-striped align-middle">
+              <thead>
+                <tr>
+                  <th>Dueño</th>
+                  <th>Mascota</th>
+                  <th>Color</th>
+                  <th>Edad</th>
+                  <th>Peso</th>
+                  <th class="text-end">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="listado-mascotas">
+                <!-- Se llena dinámicamente con JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- FORMULARIO DE ALTA / EDICIÓN -->
+        <article class="col-12 col-lg-5">
+          <form class="d-flex flex-column gap-3 p-4 bg-body-tertiary rounded-4" id="form-mascota">
+            <h3 class="fs-4">Nueva Mascota</h3>
+
+            <!-- Campo oculto necesario para que funcione la edición -->
+            <input type="hidden" name="idMascota" id="idMascota">
+
+            <div>
+              <label for="nombreDuenio" class="form-label">Dueño</label>
+              <input type="text" name="nombreDuenio" id="nombreDuenio" class="form-control" required>
+            </div>
+
+            <div>
+              <label for="nombreMascota" class="form-label">Nombre de la Mascota</label>
+              <input type="text" name="nombreMascota" id="nombreMascota" class="form-control" required>
+            </div>
+
+            <div>
+              <label for="color" class="form-label">Color</label>
+              <input type="text" name="color" id="color" class="form-control" required>
+            </div>
+
+            <div>
+              <label class="form-label" for="edad">Edad</label>
+              <input class="form-control" type="number" name="edad" id="edad" min="0" max="30" required>
+            </div>
+
+            <div>
+              <label class="form-label" for="peso">Peso en kg</label>
+              <input class="form-control" type="number" name="peso" id="peso" min="0" step="0.01" placeholder="Ejemplo 4.5" required>
+            </div>
+
+            <button id="botonAgregarMascota" class="btn btn-primary" type="submit">Agregar Mascota</button>
+          </form>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-marca">
+      <span>La Mary</span>
+      <p>
+        Av. Siempre Viva 1234, Concordia, Entre Ríos.
+        Lunes a sábado. Urgencias 24 h.
+      </p>
+    </div>
+
+    <div class="footer-seccion">
+      <span>SECCIONES</span>
+      <a href="index.html">Inicio</a>
+      <a href="institucional.html">Institucional</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="mascotas.html">Mascotas</a>
+    </div>
+
+    <div class="footer-seccion">
+      <span>SEGUINOS</span>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">TikTok</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
